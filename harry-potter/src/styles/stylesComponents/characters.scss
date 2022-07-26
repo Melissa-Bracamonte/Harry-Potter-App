@@ -1,0 +1,103 @@
+.allCard {
+  display: flex;
+  flex-direction: row;
+  // position: absolute;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  bottom: 0px;
+  border-radius: 16px;
+  width: 515px;
+  height: 265px;
+}
+
+.imgContainer {
+  // position: absolute;
+  width: 210px;
+  height: 265px;
+  left: 0px;
+  top: 0px;
+  bottom: 0px;
+  border-radius: 16px 0px 0px 16px;
+
+  img {
+    //   width: 169.3px;
+    //   height: 230.31px;
+    // position: absolute;
+    left: 3.63%;
+    right: 63.5%;
+    top: 14.33%;
+    bottom: -1.24%;
+    display: inline-block;
+    position: relative;
+    width: 170px;
+    height: 170px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-left: 10px;
+    margin-top: 10px;
+  }
+}
+
+.status {
+  width: 94px;
+  height: 19px;
+  display: flex;
+  flex-direction: row;
+
+  .statusCharacter {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    text-align: right;
+    color: #999999;
+  }
+  .btnFavourite {
+    background: none;
+    border: none;
+    cursor: pointer;
+
+    img {
+      position: absolute;
+      left: 91.84%;
+      right: 4.27%;
+      top: 8.3%;
+      bottom: 83.4%;
+      width: 20px;
+      height: 22px;
+    }
+  }
+}
+
+.title {
+  // position: absolute;
+  width: 226px;
+  height: 46px;
+  top: 64px;
+  left: 235px;
+  .card-title {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 46px;
+    color: #081f32;
+    white-space: nowrap;
+  }
+}
+
+.characterInformation {
+  // position: absolute;
+  width: 184px;
+  height: 112px;
+  top: 131px;
+  left: 235px;
+
+  p {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    // line-height: 27px;
+    color: #374a59;
+  }
+}
