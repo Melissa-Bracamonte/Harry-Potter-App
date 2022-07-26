@@ -1,5 +1,4 @@
 import React from "react";
-import "../../styles/stylesComponents/characters.scss";
 import Houses from "./Houses";
 import AliveOrFinado from "./AliveOrFinado";
 
@@ -8,8 +7,8 @@ const Characters = ({ characters = [] }) => {
     <>
       <section className="row">
         {characters.map((item, index) => (
-          <section key={index} className="col mb-4">
-            <section className="card allCard" id="allCards">
+          <section key={index} className="col mb-4 cardContainer">
+            <section className="card allCards">
               <Houses item={item} />
               <AliveOrFinado item={item} />
             </section>

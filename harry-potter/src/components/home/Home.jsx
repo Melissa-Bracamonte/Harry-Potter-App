@@ -4,6 +4,7 @@ import Characters from "../characters/Characters";
 import FilterCharacters from "../filterCharacters/FilterCharacters";
 import { Modal } from "../modal/Modal";
 import harryPotter from "../../img/harryPotter.png";
+import "../../styles/stylesComponents/characters.scss";
 
 function Home() {
   const [characters, setCharacters] = useState([]);
@@ -41,9 +42,9 @@ function Home() {
   //     fetchApi(initialUrl);
   //   }, []);
 
-//   console.log(characters);
+  //   console.log(characters);
 
-const onAdd = () => {
+  const onAdd = () => {
     let popupProduct = {};
     setPopup({ visibility: true, popupProduct });
   };
@@ -77,11 +78,30 @@ const onAdd = () => {
         attrProduct={objPopup.popupProduct}
       />
       <Navbar onAdd={onAdd} />
-      <img
-        src={harryPotter}
-        className="img-fluid rounded-start"
-        alt="harryPotter"
-      />
+      <section className="sectionHeader">
+        <img
+          src={harryPotter}
+          className="img-fluid rounded-start"
+          alt="harryPotter"
+        />
+        <span>Selecciona tu filtro</span>
+
+        <section className="studentAndStaff">
+      <button
+      className="btn"
+        onClick={() => hogwartsStudents(setStaff([]))}
+      >
+        <p>ESTUDIANTES</p>
+      </button>{" "}
+      <button
+      className="btn"
+        onClick={() => hogwartsStaff(setStudents([]))}
+      >
+        <p>STAFF</p>
+      </button>
+      </section>
+
+      </section>
       <section className="container mt-5">
         <FilterCharacters
           students={students}

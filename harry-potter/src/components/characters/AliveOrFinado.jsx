@@ -47,18 +47,18 @@ const AliveOrFinado = ({ item }) => {
           </section>
           <hr />
           <section className="characterInformation">
-            <p className="card-text">
+            <span className="card-text">
               <strong>Cumpleaños:</strong> {item.dateOfBirth}
-            </p>
-            <p className="card-text">
+            </span>
+            <span className="card-text">
               <strong>Género:</strong> {item.gender}
-            </p>
-            <p className="card-text">
+            </span>
+            <span className="card-text">
               <strong>Color de ojos:</strong> {item.eyeColour}
-            </p>
-            <p className="card-text">
+            </span>
+            <span className="card-text">
               <strong>Color de pelo:</strong> {item.hairColour}
-            </p>
+            </span>
           </section>
         </section>
       ) : (
@@ -96,18 +96,18 @@ const AliveOrFinado = ({ item }) => {
           </section>
           <hr />
           <section className="characterInformation">
-            <p className="card-text">
+            <span className="card-text">
               <strong>Cumpleaños:</strong> {item.dateOfBirth}
-            </p>
-            <p className="card-text">
+            </span>
+            <span className="card-text">
               <strong>Género:</strong> {item.gender}
-            </p>
-            <p className="card-text">
+            </span>
+            <span className="card-text">
               <strong>Color de ojos:</strong> {item.eyeColour}
-            </p>
-            <p className="card-text">
+            </span>
+            <span className="card-text">
               <strong>Color de pelo:</strong> {item.hairColour}
-            </p>
+            </span>
           </section>
         </section>
       )}

@@ -1,7 +1,80 @@
-.allCard {
+.sectionHeader {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  left: 24.61%;
+  right: 66.61%;
+  top: 13.92%;
+  bottom: 40.6%;
+  img {
+    width: 200px;
+    left: 69.92%;
+    right: 22.49%;
+    top: 11.34%;
+    bottom: 22.23%;
+  }
+  span {
+    width: 338px;
+    height: 25px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 25px;
+    text-align: center;
+    color: #ffffff;
+  }
+}
+
+.studentAndStaff {
+  display: grid;
+  grid-template-columns: 288px 288px;
+  height: 67px;
+  gap: 100px;
+  margin-top: 25px;
+  button {
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 4px;
+    border-color: #6b63b5;
+    &:hover {
+      background: rgba(107, 99, 181, 0.6);
+      border-color: #6b63b5;
+    }
+    &:focus {
+      background: #6b63b5;
+      border-color: #6b63b5;
+    }
+    p {
+      left: 19.44%;
+      right: 19.44%;
+      top: 29.85%;
+      margin-top: 10px;
+      bottom: 31.34%;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 17px;
+      line-height: 25px;
+      text-align: center;
+      letter-spacing: 0.2em;
+      color: #ffffff;
+      border-radius: 4px;
+    }
+  }
+}
+
+.cardContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.allCards {
   display: flex;
   flex-direction: row;
-  // position: absolute;
   left: 0px;
   right: 0px;
   top: 0px;
@@ -12,7 +85,6 @@
 }
 
 .imgContainer {
-  // position: absolute;
   width: 210px;
   height: 265px;
   left: 0px;
@@ -21,9 +93,6 @@
   border-radius: 16px 0px 0px 16px;
 
   img {
-    //   width: 169.3px;
-    //   height: 230.31px;
-    // position: absolute;
     left: 3.63%;
     right: 63.5%;
     top: 14.33%;
@@ -71,7 +140,6 @@
 }
 
 .title {
-  // position: absolute;
   width: 226px;
   height: 46px;
   top: 64px;
@@ -87,17 +155,21 @@
 }
 
 .characterInformation {
-  // position: absolute;
+  display: flex;
+  flex-direction: column;
   width: 184px;
   height: 112px;
   top: 131px;
   left: 235px;
 
-  p {
+  span {
     font-style: normal;
-    font-weight: 700;
     font-size: 14px;
-    // line-height: 27px;
+    line-height: 27px;
     color: #374a59;
+    strong {
+      font-weight: 700;
+      color: #374a59;
+    }
   }
 }
