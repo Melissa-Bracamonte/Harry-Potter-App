@@ -41,7 +41,8 @@ export function Modal({ attrProduct, onClickCloseModal, visible }) {
   };
 
   const saveNewCharacter = (character) => {
-    fetch("http://localhost:3004/characters", {
+    // fetch("http://localhost:3004/characters", {
+      fetch("https://62e10d90fa8ed271c48d67a0.mockapi.io/api/characters/characters", {
       method: "POST",
       headers: {
         "content-type": "application/json",
@@ -64,27 +65,17 @@ export function Modal({ attrProduct, onClickCloseModal, visible }) {
 
   return visible ? (
     <>
-      {/* <div id="myModal" className={styles.modal}> */}
       <div id="myModal" className="modal">
         <div className="modalContent">
-          {/* <section className='boxClose'> */}
           <span className="close" onClick={onClickCloseModal}>
-            {/* &times; */}
-            <img
-              src={close}
-              // className="img-fluid rounded-start"
-              alt="close"
-            />
+            <img src={close} alt="close" />
           </span>
-          {/* </section> */}
 
           <section className="titleModal">Agrega un personaje</section>
           <form onSubmit={handleSubmit(onSubmit)}>
             <section className="AllInputs">
               <div className="mb-3">
-                <label className="col-form-label">
-                  NOMBRE
-                </label>
+                <label className="col-form-label">NOMBRE</label>
                 <input
                   type={"text"}
                   className="form-control inputModal"
@@ -101,9 +92,7 @@ export function Modal({ attrProduct, onClickCloseModal, visible }) {
                 )}
               </div>
               <div className="mb-3">
-                <label className="col-form-label">
-                  CUMPLEAÑOS
-                </label>
+                <label className="col-form-label">CUMPLEAÑOS</label>
                 <input
                   type={"text"}
                   className="form-control inputModal"
@@ -121,9 +110,7 @@ export function Modal({ attrProduct, onClickCloseModal, visible }) {
               </div>
 
               <div className="mb-3">
-                <label className="col-form-label">
-                  COLOR OJOS
-                </label>
+                <label className="col-form-label">COLOR OJOS</label>
                 <input
                   type={"text"}
                   className="form-control inputModal"
@@ -141,9 +128,7 @@ export function Modal({ attrProduct, onClickCloseModal, visible }) {
               </div>
 
               <div className="mb-3">
-                <label className="col-form-label">
-                  COLOR DE PELO
-                </label>
+                <label className="col-form-label">COLOR DE PELO</label>
                 <input
                   type={"text"}
                   className="form-control inputModal"
@@ -161,12 +146,10 @@ export function Modal({ attrProduct, onClickCloseModal, visible }) {
               </div>
 
               <section className="radio">
-                <label className="col-form-label">
-                  GÉNERO
-                </label>
+                <label className="col-form-label">GÉNERO</label>
                 <div className="genderAndPosition">
                   <input
-                  className="inputRadio"
+                    className="inputRadio"
                     type="radio"
                     name="theme"
                     value="male"
@@ -174,7 +157,7 @@ export function Modal({ attrProduct, onClickCloseModal, visible }) {
                   />
                   Mujer
                   <input
-                  className="inputRadio"
+                    className="inputRadio"
                     type="radio"
                     name="theme"
                     value="female"
@@ -185,12 +168,10 @@ export function Modal({ attrProduct, onClickCloseModal, visible }) {
               </section>
 
               <section className="radio">
-                <label className="col-form-label">
-                  POSICIÓN
-                </label>
+                <label className="col-form-label">POSICIÓN</label>
                 <div className="genderAndPosition">
                   <input
-                  className="inputRadio"
+                    className="inputRadio"
                     type="radio"
                     name="theme"
                     value="true"
@@ -198,7 +179,7 @@ export function Modal({ attrProduct, onClickCloseModal, visible }) {
                   />
                   Estudiante
                   <input
-                  className="inputRadio"
+                    className="inputRadio"
                     type="radio"
                     name="theme"
                     value="true"
@@ -209,10 +190,9 @@ export function Modal({ attrProduct, onClickCloseModal, visible }) {
               </section>
 
               <div className="inputFile">
-              <p className="photo">FOTOGRAFIA PNG</p>
-              <input type="file"  {...register("image")}/>
+                <p className="photo">FOTOGRAFIA PNG</p>
+                <input type="file" {...register("image")} />
               </div>
-
             </section>
             <section className="areaSaveButton">
               <button type="submit" className="saveButton">

@@ -6,7 +6,6 @@ import { Modal } from "../modal/Modal";
 import harryPotter from "../../img/harryPotter.png";
 import "../../styles/stylesComponents/characters.scss";
 
-// function Home() {
 const Home = () => {
   const [characters, setCharacters] = useState([]);
   const [filterCharacter, setFilterCharacter] = useState([]);
@@ -14,10 +13,10 @@ const Home = () => {
   const [staff, setStaff] = useState([]);
   const [objPopup, setPopup] = useState({ visibility: false });
 
-  //   const initialUrl = "http://localhost:3004/characters";
-
   const getAllCharacters = () => {
-    fetch("http://localhost:3004/characters")
+    fetch(
+      "https://62e10d90fa8ed271c48d67a0.mockapi.io/api/characters/characters"
+    )
       .then((response) => response.json())
       .then((characters) => {
         setCharacters(characters);
@@ -28,22 +27,6 @@ const Home = () => {
   useEffect(() => {
     getAllCharacters();
   }, []);
-
-  //   const fetchApi = (url) => {
-  //     fetch(url)
-  //       .then((response) => response.json())
-  //       .then((characters) => {
-  //         setCharacters(characters);
-  //         setFilterCharacter(characters);
-  //       })
-  //       .catch((error) => console.log(error));
-  //   };
-
-  //   useEffect(() => {
-  //     fetchApi(initialUrl);
-  //   }, []);
-
-  //   console.log(characters);
 
   const onAdd = () => {
     let popupCharacter = {};
@@ -74,10 +57,10 @@ const Home = () => {
   return (
     <>
       <Modal
-      onClickCloseModal={onClickHide}
-      visible={objPopup.visibility}
-      attrProduct={objPopup.popupCharacter}
-    ></Modal>
+        onClickCloseModal={onClickHide}
+        visible={objPopup.visibility}
+        attrProduct={objPopup.popupCharacter}
+      ></Modal>
 
       <Navbar onAdd={onAdd} />
 
@@ -105,11 +88,8 @@ const Home = () => {
         </section>
       </section>
       <section className="container mt-5">
-      <Characters characters={characters} />
-        <FilterCharacters
-          students={students}
-          staff={staff}
-        />
+        <Characters characters={characters} />
+        <FilterCharacters students={students} staff={staff} />
       </section>
     </>
   );
