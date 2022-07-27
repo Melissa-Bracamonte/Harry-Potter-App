@@ -20,13 +20,13 @@
 
 Harry Potter App es una aplicación que permite ver a los personajes de las películas de Harry Potter, su información y la casa a la que pertenecen diferenciada por colores, además permite registrar personajes dentro de la app.
 
-El desarrollo de este proyecto se hizo siguiendo la métodología SCRUM, por lo que trabajé por historias de usuario aterrizando la planeación con sus criterios de aceptación y definición de terminado en Trello, las actualizaciones de cada versión se hicieron en Github en la rama Progress, para posteriormente hacer un pull request a la rama master donde podrán encontrar la versión final de este proyecto
+El desarrollo de este proyecto se hizo siguiendo la métodología SCRUM, por lo que trabajé por historias de usuario aterrizando la planeación con sus criterios de aceptación y definición de terminado en Trello, las actualizaciones de cada versión se hicieron en Github en la rama progress, para posteriormente hacer un pull request a la rama master donde podrán encontrar la versión final de este proyecto
 
 ![trello](https://raw.githubusercontent.com/Melissa-Bracamonte/Harry-Potter-App/37bc56de8568ae241d630d017be6333318c1edc2/harry-potter/src/img/photosReadme/trello.png)
 
 ## 2. API
 
-Para este proyecto se trabajó con una API en Json Server llamada, **characters**, en la cual se encuentra almacenada la data sobre los personajes de Harry Potter, así como su información personal. A continuación puedes ver la arquitectura de la APIs
+Para este proyecto se trabajó con una API en Json Server llamada, **characters**, en la cual se encuentra almacenada la data sobre los personajes de Harry Potter, así como su información personal, esta API fue alojada en MockApi para poder hacer el deploy en Heroku. A continuación puedes ver la arquitectura de la APIs
 
 ![api](https://raw.githubusercontent.com/Melissa-Bracamonte/Harry-Potter-App/f80fa921f922e0d24f284282eddefb4c749d2312/harry-potter/src/img/photosReadme/api.png)
 
@@ -36,7 +36,6 @@ Para asegurarnos que la app fuese intuitiva para el usuario y se cumplieran con 
 
 #### [Historia de usuario 1] 
 Yo como fanático de Harry Potter quiero tener una aplicación donde pueda visualizar la información de los personajes de las películas.
----
 
 #### [Historia de usuario 2] 
 Yo como fanático de Harry Potter quiero diferenciar a qué casa pertenece cada personaje
@@ -45,7 +44,7 @@ Yo como fanático de Harry Potter quiero diferenciar a qué casa pertenece cada 
 Yo como fanático de Harry Potter quiero diferenciar qué personajes murieron y cuáles siguen con vida
 
 #### [Historia de usuario 4]
-Yo como fanático de Harry Potter quiero poder ver solo a los staff y solo a los estudiantes
+Yo como fanático de Harry Potter quiero poder filtrar por staff y estudiantes
 
 #### [Historia de usuario 5]
 Yo como fanático de Harry Potter quiero poder agregar nuevos personajes
