@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import { useForm } from "react-hook-form";
 import "../../styles/stylesComponents/modal.scss";
 import close from "../../img/close.png";
-// import Swal from "sweetalert2";
+import Swal from "sweetalert2";
 
 export function Modal({ attrProduct, onClickCloseModal, visible }) {
   const {
@@ -53,13 +53,13 @@ export function Modal({ attrProduct, onClickCloseModal, visible }) {
         console.log(addedCharacter);
         onClickCloseModal();
       });
-    // Swal.fire({
-    //   position: "center",
-    //   icon: "success",
-    //   title: "Personaje agregado",
-    //   showConfirmButton: false,
-    //   timer: 1500,
-    // });
+    Swal.fire({
+      position: "center",
+      icon: "success",
+      title: "Personaje agregado",
+      showConfirmButton: false,
+      timer: 1500,
+    });
   };
 
   return visible ? (
