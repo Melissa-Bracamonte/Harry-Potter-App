@@ -41,14 +41,16 @@ export function Modal({ attrProduct, onClickCloseModal, visible }) {
   };
 
   const saveNewCharacter = (character) => {
-    // fetch("http://localhost:3004/characters", {
-      fetch("https://62e10d90fa8ed271c48d67a0.mockapi.io/api/characters/characters", {
-      method: "POST",
-      headers: {
-        "content-type": "application/json",
-      },
-      body: JSON.stringify(character),
-    })
+    fetch(
+      "https://62e10d90fa8ed271c48d67a0.mockapi.io/api/characters/characters",
+      {
+        method: "POST",
+        headers: {
+          "content-type": "application/json",
+        },
+        body: JSON.stringify(character),
+      }
+    )
       .then((response) => response.json())
       .then((addedCharacter) => {
         console.log(addedCharacter);

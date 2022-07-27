@@ -10,7 +10,6 @@ const finadoCharacter = {
 };
 
 const AliveOrFinado = ({ item }) => {
-
   return (
     <>
       {item.alive === true ? (
