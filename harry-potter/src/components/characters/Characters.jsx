@@ -11,7 +11,7 @@ const Characters = ({ characters = [] }) => {
           <section key={index} className="col mb-4 cardContainer">
             <section className="card allCards">
               <Houses item={item} />
-              <AliveOrFinado item={item} />
+              <AliveOrFinado item={item}/>
             </section>
           </section>
         ))}
