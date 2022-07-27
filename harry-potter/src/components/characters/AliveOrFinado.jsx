@@ -28,7 +28,7 @@ const AliveOrFinado = ({ item }) => {
               </p>
             )}
             <span className="input-group-addon statusCharacter"> / </span>
-            {item.hogwartsStudent === true ? (
+            {item.hogwartsStudent === true || "true" ? (
               <p className="card-text statusCharacter">
                 <small className="text-muted">ESTUDIANTE</small>
               </p>

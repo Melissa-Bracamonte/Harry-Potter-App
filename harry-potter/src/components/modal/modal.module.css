@@ -48,7 +48,7 @@
     margin-bottom: 8px;
   }
   
-  .buttonEdit {
+  /* .buttonEdit {
     background-color: black;
     border: solid 2px;
     border-color: #7ed090;
@@ -58,16 +58,16 @@
     margin-right: 208px;
     padding: 0px;
     transition-duration: 0.4s;
-  }
+  } */
   
-  .buttonEdit:hover {
+  /* .buttonEdit:hover {
     border-color: #4b8d59;
-  }
+  } */
   
-  .editionImg {
+  /* .editionImg {
     width: 32px;
     height: 30px;
-  }
+  } */
   
   .AllInputs {
     display: flex;
