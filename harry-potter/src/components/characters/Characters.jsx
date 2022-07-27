@@ -3,6 +3,7 @@ import Houses from "./Houses";
 import AliveOrFinado from "./AliveOrFinado";
 
 const Characters = ({ characters = [] }) => {
+
   return (
     <>
       <section className="row">

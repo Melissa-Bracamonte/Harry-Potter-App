@@ -176,7 +176,8 @@
   }
 }
 
-@media only screen and (max-device-width: 675px) {
+@media only screen and (min-width: 1px) and (max-width: 675px) {
+// @media only screen and (max-device-width: 675px) {
   .sectionHeader {
     display: flex;
     flex-direction: column;

@@ -13,9 +13,10 @@ const Home = () => {
   const [staff, setStaff] = useState([]);
   const [objPopup, setPopup] = useState({ visibility: false });
 
-  const getAllCharacters = () => { 
-    // fetch("http://localhost:3004/characters")
-    fetch("https://62e10d90fa8ed271c48d67a0.mockapi.io/api/characters/characters")
+  const getAllCharacters = () => {
+    fetch(
+      "https://62e10d90fa8ed271c48d67a0.mockapi.io/api/characters/characters"
+    )
       .then((response) => response.json())
       .then((characters) => {
         setCharacters(characters);
