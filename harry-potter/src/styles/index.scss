@@ -1,31 +1,15 @@
-// $breakpoints: (
-//   sm: 390px
-// );
-
-// @mixin media-up($breakpoints) {
-//   @media screen and (min-width: map-get($breakpoints, $breakpoints)) {
-//     @content;
-//   }
-// }
 @media (min-width: 676px) {
-body{
+  body {
     background-color: black;
     background-image: url("../img/background.png");
     background-size: 100vw 50vh;
     background-repeat: no-repeat;
-    font-family: 'Open Sans', sans-serif;
-
-  //   @include media-up(sm){
-  //   background-color: black;
-  // }
+    font-family: "Open Sans", sans-serif;
   }
 }
 @media only screen and (max-device-width: 675px) {
-  body{
+  body {
     background-color: black;
-    // background-image: url("../img/background.png");
-    // background-size: 100vw 50vh;
-    // background-repeat: no-repeat;
-    font-family: 'Open Sans', sans-serif;
+    font-family: "Open Sans", sans-serif;
   }
 }
