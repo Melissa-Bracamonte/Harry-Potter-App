@@ -1,3 +1,4 @@
+@media (min-width: 676px) {
 .sectionHeader {
   display: flex;
   flex-direction: column;
@@ -170,6 +171,186 @@
     strong {
       font-weight: 700;
       color: #374a59;
+    }
+  }
+}
+}
+
+@media only screen and (max-device-width: 675px) {
+  .sectionHeader {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    left: 24.61%;
+    right: 66.61%;
+    top: 13.92%;
+    bottom: 40.6%;
+    margin-top: 20px;
+    margin-left: 30%;
+    img {
+      left: 49.67%;
+      right: 28.83%;
+      top: 1.35%;
+      bottom: 1.52%;
+    }
+    span {
+      width: 169px;
+      height: 25px;
+      font-family: 'Open Sans';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 25px;
+      text-align: center; 
+      color: #FFFFFF;
+    }
+  }
+  
+  .studentAndStaff {
+    display: grid;
+    grid-template-columns: 140px 140px;
+    height: 67px;
+    gap: 100px;
+    margin-top: 25px;
+    button {
+      box-sizing: border-box;
+      width: 140px;
+      height: 42.93px;
+      background: rgba(0, 0, 0, 0.6);
+      border: 4px solid #6B63B5;
+
+      &:hover {
+        background: rgba(107, 99, 181, 0.6);
+        border-color: #6b63b5;
+      }
+      &:focus {
+        background: #6b63b5;
+        border-color: #6b63b5;
+      }
+      p {
+        width: 112.76px;
+        height: 16.66px; 
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 13px;
+        line-height: 16px;
+        text-align: center;
+        letter-spacing: 0.2em;
+        color: #FFFFFF;
+        border-radius: 2.56277px;
+      }
+    }
+  }
+  
+  // ------------------------
+
+  .cardContainer {
+    display: flex;
+    justify-content: center;
+    margin-left: 10%;
+  }
+  
+  .allCards {
+    display: flex;
+    flex-direction: row;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+    border-radius: 16px;
+    width: 515px;
+    height: 265px;
+  }
+  
+  .imgContainer {
+    width: 210px;
+    height: 265px;
+    left: 0px;
+    top: 0px;
+    bottom: 0px;
+    border-radius: 16px 0px 0px 16px;
+  
+    img {
+      // left: 3.63%;
+      // right: 63.5%;
+      // right: 60px;
+      margin-right: 20px;
+      top: 14.33%;
+      bottom: -1.24%;
+      display: inline-block;
+      position: relative;
+      width: 170px;
+      height: 170px;
+      overflow: hidden;
+      border-radius: 50%;
+      margin-left: 10px;
+      margin-top: 10px;
+    }
+  }
+  
+  .status {
+    width: 94px;
+    height: 19px;
+    display: flex;
+    flex-direction: row;
+  
+    .statusCharacter {
+      font-style: normal;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 19px;
+      text-align: right;
+      color: #999999;
+    }
+    .btnFavourite {
+      background: none;
+      border: none;
+      cursor: pointer;
+  
+      img {
+        top: 8.3%;
+        bottom: 83.4%;
+        width: 20px;
+        height: 22px;
+      }
+    }
+  }
+  
+  .title {
+    width: 226px;
+    height: 46px;
+    top: 64px;
+    left: 235px;
+    .card-title {
+      font-style: normal;
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 46px;
+      color: #081f32;
+      white-space: nowrap;
+    }
+  }
+  
+  .characterInformation {
+    display: flex;
+    flex-direction: column;
+    width: 184px;
+    height: 112px;
+    top: 131px;
+    left: 235px;
+  
+    span {
+      font-style: normal;
+      font-size: 14px;
+      line-height: 27px;
+      color: #374a59;
+      strong {
+        font-weight: 700;
+        color: #374a59;
+      }
     }
   }
 }

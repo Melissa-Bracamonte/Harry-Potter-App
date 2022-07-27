@@ -6,7 +6,8 @@ import { Modal } from "../modal/Modal";
 import harryPotter from "../../img/harryPotter.png";
 import "../../styles/stylesComponents/characters.scss";
 
-function Home() {
+// function Home() {
+const Home = () => {
   const [characters, setCharacters] = useState([]);
   const [filterCharacter, setFilterCharacter] = useState([]);
   const [students, setStudents] = useState([]);
@@ -45,8 +46,8 @@ function Home() {
   //   console.log(characters);
 
   const onAdd = () => {
-    let popupProduct = {};
-    setPopup({ visibility: true, popupProduct });
+    let popupCharacter = {};
+    setPopup({ visibility: true, popupCharacter });
   };
 
   const onClickHide = () => {
@@ -73,11 +74,13 @@ function Home() {
   return (
     <>
       <Modal
-        onClickCloseModal={onClickHide}
-        visible={objPopup.visibility}
-        attrProduct={objPopup.popupProduct}
-      />
+      onClickCloseModal={onClickHide}
+      visible={objPopup.visibility}
+      attrProduct={objPopup.popupCharacter}
+    ></Modal>
+
       <Navbar onAdd={onAdd} />
+
       <section className="sectionHeader">
         <img
           src={harryPotter}
@@ -87,34 +90,29 @@ function Home() {
         <span>Selecciona tu filtro</span>
 
         <section className="studentAndStaff">
-      <button
-      className="btn"
-        onClick={() => hogwartsStudents(setStaff([]))}
-      >
-        <p>ESTUDIANTES</p>
-      </button>{" "}
-      <button
-      className="btn"
-        onClick={() => hogwartsStaff(setStudents([]))}
-      >
-        <p>STAFF</p>
-      </button>
-      </section>
-
+          <button
+            className="btn"
+            onClick={() => hogwartsStudents(setStaff([]))}
+          >
+            <p>ESTUDIANTES</p>
+          </button>{" "}
+          <button
+            className="btn"
+            onClick={() => hogwartsStaff(setStudents([]))}
+          >
+            <p>STAFF</p>
+          </button>
+        </section>
       </section>
       <section className="container mt-5">
+      <Characters characters={characters} />
         <FilterCharacters
           students={students}
           staff={staff}
-          setStaff={setStaff}
-          setStudents={setStudents}
-          hogwartsStudents={hogwartsStudents}
-          hogwartsStaff={hogwartsStaff}
         />
-        <Characters characters={characters} />
       </section>
     </>
   );
-}
+};
 
 export default Home;
