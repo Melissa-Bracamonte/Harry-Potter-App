@@ -26,7 +26,7 @@ El desarrollo de este proyecto se hizo siguiendo la métodología SCRUM, por lo 
 ## 2. API
 Para este proyecto se trabajó con una API en Json Server llamada, **characters**, en la cual se encuentra almacenada la data sobre los personajes de Harry Potter, así como su información personal. A continuación puedes ver la arquitectura de la APIs
 
-![api]()
+![api](https://raw.githubusercontent.com/Melissa-Bracamonte/Harry-Potter-App/f80fa921f922e0d24f284282eddefb4c749d2312/harry-potter/src/img/photosReadme/api.png)
 
 ## 3. Historias de usuario
 
@@ -63,18 +63,18 @@ Lo acordado que debe ocurrir para decir que la historia está terminada.
 
 El diseño de la aplicación se hizo siguiendo el siguiente prototipo de Figma:
 
-![figma1]()
-![figma2]()
-![figma3]()
+![figma1](https://raw.githubusercontent.com/Melissa-Bracamonte/Harry-Potter-App/f80fa921f922e0d24f284282eddefb4c749d2312/harry-potter/src/img/photosReadme/prototipo.png)
+![figma2](https://raw.githubusercontent.com/Melissa-Bracamonte/Harry-Potter-App/f80fa921f922e0d24f284282eddefb4c749d2312/harry-potter/src/img/photosReadme/prototipo2.png)
+![figma3](https://raw.githubusercontent.com/Melissa-Bracamonte/Harry-Potter-App/f80fa921f922e0d24f284282eddefb4c749d2312/harry-potter/src/img/photosReadme/prototipo3.png)
 
 ## 5. Vista final
 
 Todo lo anterior dio como resultado la interfaz en desktop y en móbil:
 
-![interfaz-1]()
-![interfaz-2]()
-![interfaz-3]()
-![interfaz-4]()
+![interfaz-1](https://raw.githubusercontent.com/Melissa-Bracamonte/Harry-Potter-App/f80fa921f922e0d24f284282eddefb4c749d2312/harry-potter/src/img/photosReadme/interfaz1.png)
+![interfaz-2](https://raw.githubusercontent.com/Melissa-Bracamonte/Harry-Potter-App/f80fa921f922e0d24f284282eddefb4c749d2312/harry-potter/src/img/photosReadme/interfaz2.png)
+![interfaz-3](https://raw.githubusercontent.com/Melissa-Bracamonte/Harry-Potter-App/f80fa921f922e0d24f284282eddefb4c749d2312/harry-potter/src/img/photosReadme/interfazMobile1.png)
+![interfaz-4](https://raw.githubusercontent.com/Melissa-Bracamonte/Harry-Potter-App/f80fa921f922e0d24f284282eddefb4c749d2312/harry-potter/src/img/photosReadme/interfazMobile2.png)
 
 ## 6. Stack tecnológíco
 Las tecnologías que se usaron para llevar a cabo este proyecto son:
